@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>EthicalOSINT - Phone Lookup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
+    <!-- Header Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-shield-halved logo-icon"></i>
+                <span>Ethical<span class="highlight">OSINT</span></span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Lookup</a>
+                <a href="terms.html">Terms</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Top Header Ad -->
+    <div class="ad-top-wrapper">
+        <div class="ad-box ad-header">
+            <span>Adsterra Top Banner Zone</span>
+        </div>
+    </div>
+
+    <!-- Main Content Layout -->
+    <main class="main-container">
+        <div class="layout-grid">
+
+            <section class="content-area">
+                
+                <!-- Input Card -->
+                <div class="card">
+                    <h1 class="card-title">Phone OSINT Lookup</h1>
+                    <p class="card-subtitle">Enter target phone number below.</p>
+                    
+                    <form id="osintForm" class="lookup-form">
+                        <label for="phoneNumber" class="input-label">Phone Number</label>
+                        <div class="input-group">
+                            <input type="text" id="phoneNumber" placeholder="e.g. 919876543210" required>
+                            <button type="submit" id="submitBtn">
+                                <i class="fa-solid fa-search"></i> Run Lookup
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Mid Native Ad Zone (Strict Fixed Height Protection) -->
+                <div class="card ad-mid-card">
+                    <div class="ad-box ad-mid">
+                        <span>Adsterra High-CTR Native Banner</span>
+                    </div>
+                </div>
+
+                <!-- Result Card -->
+                <div id="resultContainer" class="card result-card hidden">
+                    <div class="result-header">
+                        <h2>Retrieved Data</h2>
+                        <span id="statusBadge" class="badge">Success</span>
+                    </div>
+                    
+                    <div id="parsedData" class="parsed-data-grid"></div>
+                </div>
+
+            </section>
+
+            <!-- Sidebar Ad Area -->
+            <aside class="sidebar-area">
+                <div class="card sidebar-card">
+                    <div class="ad-box ad-sidebar">
+                        <span>Adsterra Skyscraper Ad</span>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 EthicalOSINT. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+      </html>
+      
